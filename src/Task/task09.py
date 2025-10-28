@@ -13,4 +13,4 @@ if username == "admin" and password == "1234":
 else:
     print("❌ Invalid Credentials")
 
-
+var = 'hello' + 7
