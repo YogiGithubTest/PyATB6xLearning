@@ -9,3 +9,20 @@
 # Attempt 1: Response 500
 # Attempt 2: Response 200
 # ✅ Test Passed
+import random
+
+
+def response():
+    return random.choice([300,200,500])
+Attempt = 1
+MAx_Attempt = 3
+
+while Attempt<=MAx_Attempt:
+    if response() == 200:
+        print(f"You got it! {response()}")
+        print("✅ Passed API Request")
+        break
+    else:
+        Attempt = Attempt + 1
+if response!=200:
+    print("❌ Test Failed after 3 attempts.")
